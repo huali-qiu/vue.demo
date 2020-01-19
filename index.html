@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
+
 <body>
-    <h1>goodgoodstudy daydayup</h1>
+    <div id="app">
+        <h1>使用v-for遍历数组</h1>
+        <ul>
+            <li v-for="(user,index) in users">
+               {{index}} --- {{ user }}
+            </li>
+        </ul>
+
+        <h1>使用v-for遍历数组对象</h1>
+        <template v-for='(user , index) in objuser'>
+            <h3>
+                {{ user.username }}
+            </h3>
+            <p>{{index}} --  {user.age} -- {{user.sex}}</p>
+        </template>
+    </div>
 </body>
+<script src="./app.js"></script>
+
 </html>
