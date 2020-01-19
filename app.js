@@ -2,22 +2,13 @@ new Vue({
     el : "#app",
     data(){
         return {
-            a : 0,
-            b : 0,
-            age : 18
+            mrColor : false,
+            mrLength : false
         }
     },
-    methods : {
-
-    },
     computed : {
-        addToA() {
-            console.log("aaa");
-            return this.age + this.a;
-        },
-        addToB() {
-            console.log("bbb")
-            return this.age + this.b;
+        change : function(){
+            return { changeColor: this.mrColor, changeLength:this.mrLength}
         }
     }
 })
