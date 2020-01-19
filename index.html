@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
+
 <body>
-    <h1>开始学习vue</h1>
+    <div id="app">
+        <h1>computed 计算属性</h1>
+        <button @click="a++"> a++ </button>
+        <button @click="b++"> b++ </button>
+        <p>a --- {{ a }}</p>
+        <p>b --- {{ b }}</p>
+
+        <!-- methods -->
+        <p>A : my age is {{ addToA }}</p>
+        <p>B : my age is {{ addToB }}</p>
+    </div>
 </body>
+<script src="./app.js"></script>
+
 </html>
